@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блога на Димо / Dimo's blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans text-gray-800">
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-green-100 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#a8eba2] to-[#31ff8a] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+      </div>
+      <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#347250] to-[#65f841] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <p class="text-sm leading-6 text-black">
+          <!-- <strong class="font-semibold"></strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg> -->
+          Ако видите че греша някъде ме солете тук <a class="text-[#347250]" href="mailto:your.email@example.com">email</a>
+        </p>
+      </div>
+      <div class="flex flex-1 justify-end">
+        <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+          <svg class="h-5 w-5 text-green-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid justify-evenly sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <dev class="m-5 mb-5 flex grid-cols-2 justify-evenly gap-6">
+          <!-- START Card component -->
+          <article class="container rounded-2xl bg-white p-5 shadow-2xl">
+            <h1 class="font-bold text-[#4c9c7f]">Първит пост</h1>
+            <p class="mb-5 font-light text-gray-500">Защо въобще го създадох този блог при условие че никой не ме е питал</p>
+            <a href="#" class="rounded-lg bg-[#4c9c7f] px-2 py-1.5 text-center text-white hover:bg-[#3b7e64]">Отвори</a>
+          </article>
+          <!-- END Card component -->
+        </dev>
+        <!-- Add more articles as needed -->
+      </div>
+    </div>
+
+    <footer class="fixed bottom-0 left-0 z-20 w-full border-t border-gray-200 bg-white p-3 shadow md:flex md:items-center md:justify-between md:p-6">
+      <span class="text-sm text-gray-500 sm:text-center">42. Краят на блога е някъде тук.</span>
+      <!-- <ul class="mt-3 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+          <a href="#" class="me-4 hover:underline md:me-6">About</a>
+        </li>
+      </ul> -->
+    </footer>
+  </body>
+</html>
