@@ -1,0 +1,139 @@
+<html lang="en" data-lt-installed="true">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimo's blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+    <div
+        class="sticky top-0 isolate flex items-center gap-x-6 overflow-hidden bg-green-100 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+            aria-hidden="true">
+            <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#a8eba2] to-[#31ff8a] opacity-30"
+                style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
+            </div>
+        </div>
+
+        <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+            aria-hidden="true">
+            <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#347250] to-[#65f841] opacity-30"
+                style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p class="text-sm leading-6 text-black" id="header">If you have questions or you have crituques write here
+                <a class="text-[#347250]" href="mailto:your.email@example.com">email</a></p>
+        </div>
+        <div class="flex flex-1 justify-end">
+            <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+
+            </button>
+        </div>
+    </div>
+
+
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 ">
+            <div class="hidden mb-4 sm:flex sm:justify-center">
+                <div
+                    class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    <a href="#" class="font-semibold text-[#4c9c7f] "><span class="absolute inset-0"
+                            aria-hidden="true"></span> Github repo for this blogpost.</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 class="text-5xl font-bold tracking-tight mb-5 text-gray-900">My first blog post</h1>
+                <div><span
+                        class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset m-1 ring-gray-500/10">#Web</span><span
+                        class="m-1 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">#Life</span>
+                </div>
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900 mt-4 text-justify">My first blog post</h1>
+                    <p class="mt-6 text-base leading-8 text-gray-600 text-justify">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Cras fringilla dignissim sagittis. Phasellus hendrerit diam a metus
+                        suscipit, eget auctor eros porta. Donec commodo, diam id gravida volutpat, tellus nibh egestas
+                        enim, eget aliquet erat lorem eget leo. Suspendisse in dolor porttitor nulla hendrerit
+                        tincidunt. Suspendisse tempor volutpat tempus. Vestibulum et dictum elit, in condimentum ligula.
+                        Morbi et dui id sapien mattis rhoncus et sit amet enim. Vestibulum ante ipsum primis in faucibus
+                        orci luctus et ultrices posuere cubilia curae; Etiam at ligula in enim tempus fringilla. Proin
+                        viverra finibus semper. Vivamus scelerisque faucibus tellus, ac pellentesque sapien tincidunt
+                        sed. Sed eget nulla in enim</p>
+            </div>
+        <script>
+
+            let lang = "en"
+            const language_pack_url = "/languages/posts/post1.json"
+            const POST_HTML_STYLE = "mx-auto max-w-2xl py-32 sm:py-48 lg:py-56"
+            const LINK_GITHUB_LINK_PARENT_HTML_STYLE = "hidden mb-4 sm:flex sm:justify-center"
+            const LINK_GITHUB_LINK_CHILD_HTML_STYLE = "relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            //GENERATE HEADER ELEMENT
+            function generatePostHeader(element) {
+              let newHeader = document.createElement("header");
+              newHeader.className = HEADER_HTML_STYLE
+              newHeader.innerHTML = Object.getOwnPropertyDescriptor(element.title, lang).value
+              return newHeader
+            }
+            //GENEREATE PARAGRAPH ELEMENT
+            function generatePostParagraph(element) {
+              const newParagraph = document.createElement("p");
+              newParagraph.className = PARAPGRAPH_HTML_STYLE
+              newParagraph.innerHTML = Object.getOwnPropertyDescriptor(element.description, lang).value
+              return newParagraph
+            }
+            //GENEARTE POST LINK
+            function generateGithubLink(element) {
+                <div class="hidden mb-4 sm:flex sm:justify-center">
+                <div
+                    class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    <a href="#" class="font-semibold text-[#4c9c7f] "><span class="absolute inset-0"
+                            aria-hidden="true"></span> Github repo for this blogpost.</a>
+                </div>
+            </div>
+              const mainDiv = document.createElement("div");
+              mainDiv.className = LINK_GITHUB_LINK_PARENT_HTML_STYLE
+              const childDiv = document.createElement("div");
+              childDiv.className = LINK_GITHUB_LINK_CHILD_HTML_STYLE
+              childDiv.innerHTML = Object.getOwnPropertyDescriptor(element.open, lang).value
+              childDiv.href = element.link
+              return childDiv
+            }
+            //GENERATE ARTICLE
+            function generateArticle(newHeader, newParagraph, newLink) {
+              const newArticle = document.createElement("article");
+              newArticle.className = ARTICLE_HTML_STYLE
+              newArticle.appendChild(newHeader)
+              newArticle.appendChild(newParagraph)
+              newArticle.appendChild(newLink)
+              return newArticle
+            }
+            //GENERATE POST
+            function generaetePost(githubLink,articleText) {
+              const newDiv = document.createElement("div");
+              newDiv.className = POST_HTML_STYLE
+              newDiv.appendChild(githubLink)
+              newDiv.appendChild(articleText)
+              return newDiv
+            }
+            async function setElements(lang, language_pack) {
+              
+              document.title = Object.getOwnPropertyDescriptor(language_pack.title, lang).value
+              document.getElementById("header").innerHTML = Object.getOwnPropertyDescriptor(
+                language_pack.header,
+                lang
+              ).value
+              
+            }
+            async function aquire_and_change(lang) {
+              k = await fetch(language_pack_url)
+              z = await k.json()
+              setElements(lang, z)
+            }
+            aquire_and_change(lang)
+        
+        
+          </script>
+
+
+</body>
+
+</html>

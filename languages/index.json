@@ -1,34 +1,31 @@
 {
-    "tile":{
-        "bg":"Блогът на Димо",
-        "en":"Dimo's blog"
+    "title": {
+        "bg": "Блогът на Димо",
+        "en": "Dimo's blog"
     },
-    "header":{
-        "en":"Ако имате въпроси или имате критика пишете тук -> <a class=\"text-[#347250]\" href=\"mailto:your.email@example.com\">email</a>",
-        "bg":"If you have questions or you have crituques write here -> <a class=\"text-[#347250]\" href=\"mailto:your.email@example.com\">email</a>"
+    "header": {
+        "bg": "Ако имате въпроси или имате критика пишете тук <a class=\"text-[#347250]\" href=\"mailto:dimo.yordanov@proton.me\">email</a>",
+        "en": "If you have questions or you have crituques write here <a class=\"text-[#347250]\" href=\"mailto:dimo.yordanov@proton.me\">email</a>"
     },
-    "posts":
-        [
-            {
-                "title":{
-                    "en":"First post",
-                    "bg":"Първи пост"
-                },
-                "description":{
-                    "bg":"Защо въобще го създадох този блог при условие че никой не ме е питал.... ",
-                    "en":"Why did i create it if nobody asked me to do so.... "
-                },
-                "open":{
-                    "bg":"Отвори",
-                    "en":"Open"
-                }
-
-            }
-        ],
-    "footer":{
-        "text":{
-            "bg":"42. Краят на блога е някъде тук.",
-            "en":"42. The end of the blog is around here."
+    "posts": [
+        {
+            "title": {
+                "en": "First post",
+                "bg": "Първи пост"
+            },
+            "description": {
+                "bg": "Защо въобще го създадох този блог при условие че никой не ме е питал.... ",
+                "en": "Why did i create it if nobody asked me to do so.... "
+            },
+            "open": {
+                "bg": "Отвори",
+                "en": "Open"
+            },
+            "link": "/posts/post1"
         }
+    ],
+    "footer": {
+        "bg": "42. Краят на блога е някъде тук.",
+        "en": "42. The end of the blog is around here."
     }
 }

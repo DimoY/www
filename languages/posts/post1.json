@@ -1,0 +1,49 @@
+{
+    "title": {
+        "bg": "Блогът на Димо",
+        "en": "Dimo's blog"
+    },
+    "header": {
+        "bg": "Ако имате въпроси или имате критика пишете тук <a class=\"text-[#347250]\" href=\"mailto:dimo.yordanov@proton.me\">email</a>",
+        "en": "If you have questions or you have crituques write here <a class=\"text-[#347250]\" href=\"mailto:dimo.yordanov@proton.me\">email</a>"
+    },
+    "post":{
+            "github_title":{
+                "en":"Github repo for this blogpost.",
+                "bg":"Гитхъб за този блогпост"
+            },
+            "title": {
+                "en": "My first blogpost",
+                "bg": "Моят първи блогпост"
+            },
+            "tags":[
+                {"text":{
+                    "bg":"#Уеб",
+                    "en":"#Web"
+                }},
+                {"text":{
+                    "bg":"#Живот",
+                    "en":"#Life"
+                }}
+            ],
+            "content":[
+                {
+                    "element":"h2",
+                    "style":"text-2xl font-bold tracking-tight text-gray-900  mt-4 text-justify",
+                    "text":{
+                        "bg":"1. Защо създадох това изчадие?",
+                        "en":"1. Why did i create this monster?"
+                    }
+                },
+                {
+                    "element":"p",
+                    "style":"mt-6 text-base leading-8 text-gray-600 text-justify",
+                    "text":{
+                        "bg":"-",
+                        "en":"-"
+                    }
+                }
+            ]
+        }
+    
+}
